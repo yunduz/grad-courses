@@ -5,7 +5,8 @@ bank_data_f_name = 'bank-data.csv'
 relation = bank_data_f_name.split('.')[0]
 bank_data_arff = '%s.arff' % (relation)
 
-with open('%s/%s' % (bank_data_dir_path, bank_data_f_name), 'r') as f_in, open(bank_data_arff, 'w') as f_out:
+with open('%s/%s' % (bank_data_dir_path, bank_data_f_name), 'r') as f_in, \
+     open(bank_data_arff, 'w') as f_out:
 
     f_out.write('@RELATION %s\n\n' % relation)
 
